@@ -1,0 +1,93 @@
+body{
+    background: #ff7039;
+   
+}
+
+
+
+.meather{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #fff;
+    margin-bottom: 5px;
+    background-color: #ff946c;
+
+}
+
+
+.meather > div{ /* cada filho imediato*/
+   margin: 3px;
+
+}
+
+.meather__periodo{
+    flex: 1;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.meather__icon{
+    height: 50px;
+    min-width: 50px;
+    width: 50px;
+}
+
+.meather__min{
+    font-weight: 700;
+}
+
+.meather__min{
+    content: ' - ';
+}
+
+@media (min-width:600px){
+    .meather{
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 8px;
+    }
+
+
+    .meather > div{
+        margin: 0 50px;
+    }
+
+    .meather__periodo{
+        font-size: 1.5rem;
+        min-width: 50px;
+        text-align: left;
+    }
+
+    .meather__minmax{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .meather__min::after{
+        content: '';
+    }
+}
+
+@media (min-width:900px){
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .meather{
+        flex-basis: 100px;
+        flex-direction: column;
+        margin-left: 5px;
+    }
+
+    .meather > div{
+        margin: 10px 0;
+    }
+
+    .meather__periodo{
+        flex-basis: 100px;
+    }
+}
